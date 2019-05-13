@@ -16,8 +16,8 @@
         <title>Sign up to Plutex!</title>
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="nav-link active main-name" href="index.php">Wypożyczalnia Plutex</a>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="nav-link main-name" href="index.php">Wypożyczalnia Plutex</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -25,7 +25,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Rezerwuj</a>
+                        <a class="nav-link" href="#">Wypożycz</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Historia</a>
@@ -37,12 +37,12 @@
                         <a class="nav-link" href="#">Kontakt</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"></a>
+                        <a class="nav-link" href="#">Aktualne wypożyczenie</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="signin.php">Logowanie</a>
+                        <a class="nav-link active" href="signin.php">Logowanie</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="signup.php">Rejestracja</a>
@@ -50,26 +50,53 @@
                 </ul>
             </div>
         </nav>
-        <div class="parallax1"></div>
-        <div class="parallaxtext">
-            <div class="centered-big-text">
-                WYPOŻYCZALNIA SAMOCHODÓW PLUTEX
+        
+        <div class="container">
+            <div class="space">
             </div>
-            <div class="centered-small-text">
-                dupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupa
-                dupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupa
+            <div class="row">
+                <div class="col-sm-3">
+                </div>
+                <div class="col-sm-6 top-box">
+                    <span style="font-size: 35px;">Logowanie</span>
+                </div>
+                <div class="col-sm-3">
+                </div>
             </div>
-        </div>
-        <div class="parallax2"></div>
-        <div class="parallaxtext">
-            <div class="centered-big-text">
-                WYPOŻYCZALNIA SAMOCHODÓW PLUTEX
+            <div class="row">
+                <div class="col-sm-3">
+                </div>
+                <div class="col-sm-2 box">
+                    <div class="line"></div>
+                </div>
+                <div class="col-sm-4 box">
+                </div>
             </div>
-            <div class="centered-small-text">
-                dupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupa
-                dupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupa
+            <div class="row">
+                <div class="col-sm-3">
+                </div>
+                <div class="col-sm-6 bottom-box">
+                    <div>
+                        <div>
+                            <form>
+                                <div class="form-group">
+                                    <label for="firstNane" class="col-form-label">Login:</label>
+                                    <input type="text" class="form-control" id="firstNane" placeholder="Wprowadz swój login">
+                                </div>
+                                <div class="form-group">
+                                    <label for="password" class="col-form-label">Hasło:</label>
+                                    <input type="password" class="form-control" id="password" placeholder="Wprowadź tajne hasło">
+                                </div>
+                                
+                                <input type="submit" class="btn btn-primary" value="Zaloguj">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                </div>
             </div>
-        </div>
-        <div class="parallax3"></div>
+
+        </div>  
     </body>
 </html>
