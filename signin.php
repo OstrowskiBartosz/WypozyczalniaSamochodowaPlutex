@@ -39,6 +39,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">Aktualne wypożyczenie</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="add_car.php">DODAJ/ZMODYFIKUJ/USUŃ samochody</a>
+                    </li>
                 </ul>
                 <ul class="navbar-nav">
                     <li class="nav-item">
