@@ -95,6 +95,10 @@
                                     <label for="secondName" class="col-form-label">Opis samochodu:</label>
                                     <textarea rows="4" cols="50" class="form-control" placeholder="Opis samochodu"></textarea>
                                 </div>
+								<div class="form-group">
+                                    <label for="secondName" class="col-form-label">Dodaj zdjęcia:</label>
+                                    <input type="file" name="fileToUpload" id="fileToUpload">
+                                </div>
                                 
                                 <input type="submit" class="btn btn-primary" value="Dodaj">
                             </form>
