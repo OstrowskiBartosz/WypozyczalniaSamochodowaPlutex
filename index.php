@@ -50,20 +50,7 @@
                 </ul>
             </div>
         </nav>
-		<div class="centered-big-text">
-                WYPOŻYCZALNIA SAMOCHODÓW PLUTEX
-        </div>
-		<div class="centered-small-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam euismod interdum vehicula. Etiam vehicula elit a risus fringilla mollis. Ut sit amet laoreet magna. Nulla et velit a justo semper sodales. Nulla aliquam felis eu nulla pulvinar, at aliquet nunc consectetur. Phasellus est leo, semper ut augue ut, pretium viverra nibh. Praesent id consectetur justo. Nunc non felis at lectus posuere convallis. Proin ut feugiat ante, nec fringilla massa.
 
-Suspendisse volutpat sit amet nunc euismod dapibus. Aliquam congue urna enim, nec commodo tortor auctor vel. Fusce sollicitudin quam non placerat elementum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam erat volutpat. In placerat bibendum pellentesque. Phasellus gravida gravida eros. Donec malesuada urna ac nisi fringilla dictum. Nulla egestas fermentum fringilla. Ut posuere ultricies est id fermentum. Vivamus nibh dolor, porta aliquet diam vitae, maximus ornare mauris. Fusce porttitor felis a felis finibus blandit. Duis sed vestibulum sapien, vitae molestie metus.
-
-Sed id turpis sit amet nisi gravida consectetur. Nunc blandit consectetur mi, in efficitur turpis viverra ut. Curabitur turpis diam, rhoncus ut ipsum sed, tincidunt euismod libero. Proin nisi augue, viverra nec molestie quis, pellentesque ut nisi. Nullam in volutpat velit. Nam justo tellus, tempor at nisl eget, tempor fermentum erat. Ut sed augue non felis tristique rhoncus quis et augue. In molestie turpis quis est porta, vitae mollis mauris luctus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-
-Aenean nec suscipit quam. Vestibulum venenatis mi quis augue rhoncus, et semper orci fringilla. Nunc vel porta erat. Nulla maximus nunc vitae arcu consequat, in aliquet lacus semper. Nullam tellus elit, sagittis vel tortor sit amet, pulvinar rhoncus neque. Duis euismod erat vitae sem finibus, sed pulvinar felis malesuada. Sed sollicitudin aliquam nisl nec elementum.
-
-Nulla lorem nisi, ultricies at elit sed, ultrices euismod enim. Curabitur ante libero, efficitur id eros nec, finibus commodo magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce leo velit, vestibulum ac maximus eu, ullamcorper fermentum dolor. Sed tellus est, rhoncus et elit eu, facilisis tincidunt nibh. Proin quam ex, ornare non fermentum lobortis, malesuada fringilla ante. Integer orci ipsum, sodales quis dictum eget, convallis nec elit. Etiam tincidunt ut mi in tempus. Ut placerat efficitur erat, nec interdum lectus volutpat vitae. Maecenas at sem egestas, malesuada nibh nec, auctor turpis. Phasellus nec quam justo.
-            </div>
         <div class="parallax1"></div>
         <div class="parallaxtext">
             <div class="centered-big-text">
@@ -84,12 +71,42 @@ Nulla lorem nisi, ultricies at elit sed, ultrices euismod enim. Curabitur ante l
         <div class="parallax2"></div>
         <div class="parallaxtext">
             <div class="centered-big-text">
-                WYPOŻYCZALNIA SAMOCHODÓW PLUTEX
+                DOSTĘPNE MIEJSCA WYPOŻYCZEŃ SAMOCHODÓW
             </div>
             <div class="centered-small-text">
-                dupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupa
-                dupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupadupa
+                Aenean nec suscipit quam. Vestibulum venenatis mi quis augue rhoncus, et semper orci fringilla. Nunc vel porta erat. Nulla maximus nunc vitae arcu consequat, in aliquet lacus semper. Nullam tellus elit, sagittis vel tortor sit amet, pulvinar rhoncus neque. Duis euismod erat vitae sem finibus, sed pulvinar felis malesuada. Sed sollicitudin aliquam nisl nec elementum.
+
+Nulla lorem nisi, ultricies at elit sed, ultrices euismod enim. Curabitur ante libero, efficitur id eros nec, finibus commodo magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce leo velit, vestibulum ac maximus eu, ullamcorper fermentum dolor. Sed tellus est, rhoncus et elit eu, facilisis tincidunt nibh. Proin quam ex, ornare non fermentum lobortis, malesuada fringilla ante. Integer orci ipsum, sodales quis dictum eget, convallis nec elit. Etiam tincidunt ut mi in tempus. Ut placerat efficitur erat, nec interdum lectus volutpat vitae. Maecenas at sem egestas, malesuada nibh nec, auctor turpis. Phasellus nec quam justo.
             </div>
+            <div id="map" style="width: 650px; height: 650px;   width: 50%; margin: 0 auto;">
+            </div>
+            <div class="centered-small-text" style="margin-top:40px;">
+Aenean nec suscipit quam. Vestibulum venenatis mi quis augue rhoncus, et semper orci fringilla. Nunc vel porta erat. Nulla maximus nunc vitae arcu consequat, in aliquet lacus semper. Nullam tellus elit, sagittis vel tortor sit amet, pulvinar rhoncus neque. Duis euismod erat vitae sem finibus, sed pulvinar felis malesuada. Sed sollicitudin aliquam nisl nec elementum.
+
+Nulla lorem nisi, ultricies at elit sed, ultrices euismod enim. Curabitur ante libero, efficitur id eros nec, finibus commodo magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce leo velit, vestibulum ac maximus eu, ullamcorper fermentum dolor. Sed tellus est, rhoncus et elit eu, facilisis tincidunt nibh. Proin quam ex, ornare non fermentum lobortis, malesuada fringilla ante. Integer orci ipsum, sodales quis dictum eget, convallis nec elit. Etiam tincidunt ut mi in tempus. Ut placerat efficitur erat, nec interdum lectus volutpat vitae. Maecenas at sem egestas, malesuada nibh nec, auctor turpis. Phasellus nec quam justo.
+            </div>
+            <script>
+                var map;
+                function initMap() {
+                    map = new google.maps.Map(document.getElementById('map'), {
+                        center: {lat: 50.670075, lng: 17.930562},
+                        zoom: 15
+                    });
+                    var myLatLng1 = {lat: 50.670075, lng: 17.930562};
+                    var marker1 = new google.maps.Marker({
+                        position: myLatLng1,
+                        map: map,
+                        title: 'Punkt 1'
+                    });
+                    var myLatLng2 = {lat: 50.667433, lng: 17.926580};
+                    var marker2 = new google.maps.Marker({
+                        position: myLatLng2,
+                        map: map,
+                        title: 'Punkt 2'
+                    });
+                  }
+            </script>
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJx9ORVdFAZeMPDXwPrqVVsyii1j0bjN0&callback=initMap" async defer></script>
         </div>
         <div class="parallax3"></div>
     </body>
