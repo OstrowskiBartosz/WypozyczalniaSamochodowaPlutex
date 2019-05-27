@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<link rel="stylesheet" type="text/css" href="kokos.css">
+<link rel="stylesheet" type="text/css" href="style.css">
 
 
 
@@ -18,18 +18,23 @@
 <tr>
 <th>Marka</th>
 <th>Model</th>
-<th>Dostępność</th>
+<th>Dostępna ilość</th>
 </tr>
-<?php>
+<?php
 $conn = mysqli_connect("localhost" , "root", "", "kokos");
-$sql = "SELECT Marka, Model, Dostępność from cars"
+if($conn->connect_error){
+die("Connection failed!".$conn->connect_error);
+}
+
+$sql = "SELECT Marka, Model, Dostepnosc from cars";
 $result = $conn->query($sql);
-if ($result-> num_rows > 0) {
+
+if ($result -> num_rows > 0) {
 	while ($row = $result-> fetch_assoc()) {
-		echo "<tr><td>". $row["id"]."</td><td>". $row ["Marka"] . "</td><td>" . $row ["Model"] . "</td><td>" . $row ["Dostępność"] . "</td></tr>";
+		echo "<tr><td>". $row ["Marka"] . "</td><td>" . $row ["Model"] . "</td><td>" . $row ["Dostepnosc"] . "</td></tr>";
 	}
 		echo "</table";
-  } 
+   }
   else 
   {
   echo "0 result";
