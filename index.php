@@ -1,113 +1,232 @@
-<?php
+<?php 
+session_start();
+include('includes/config.php');
+error_reporting(0);
+
 ?>
-<!doctype html>
+
+<!DOCTYPE HTML>
 <html lang="en">
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-          <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>Wypożyczalnia samochodów</title>
+<!--Bootstrap -->
+<link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
+<link rel="stylesheet" href="assets/css/style.css" type="text/css">
+<link rel="stylesheet" href="assets/css/owl.carousel.css" type="text/css">
+<link rel="stylesheet" href="assets/css/owl.transitions.css" type="text/css">
+<link href="assets/css/slick.css" rel="stylesheet">
+<link href="assets/css/bootstrap-slider.min.css" rel="stylesheet">
+<link href="assets/css/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet" id="switcher-css" type="text/css" href="assets/switcher/css/switcher.css" media="all" />
+		<link rel="alternate stylesheet" type="text/css" href="assets/switcher/css/red.css" title="red" media="all" data-default-color="true" />
+		<link rel="alternate stylesheet" type="text/css" href="assets/switcher/css/orange.css" title="orange" media="all" />
+		<link rel="alternate stylesheet" type="text/css" href="assets/switcher/css/blue.css" title="blue" media="all" />
+		<link rel="alternate stylesheet" type="text/css" href="assets/switcher/css/pink.css" title="pink" media="all" />
+		<link rel="alternate stylesheet" type="text/css" href="assets/switcher/css/green.css" title="green" media="all" />
+		<link rel="alternate stylesheet" type="text/css" href="assets/switcher/css/purple.css" title="purple" media="all" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/images/favicon-icon/apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/images/favicon-icon/apple-touch-icon-114-precomposed.html">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/images/favicon-icon/apple-touch-icon-72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="assets/images/favicon-icon/apple-touch-icon-57-precomposed.png">
+<link rel="shortcut icon" href="assets/images/favicon-icon/favicon.png">
+<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet"> 
+</head>
+<body>
 
-        <title>Sign up to Plutex!</title>
-    </head>
-    <body>
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="nav-link active main-name" href="index.php">Wypożyczalnia Plutex</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Rezerwuj</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Historia</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Profil</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Kontakt</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="add_car.php">DODAJ/ZMODYFIKUJ/USUŃ samochody</a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="signin.php">Logowanie</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="signup.php">Rejestracja</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+        
+<!--Header-->
+<?php include('includes/header.php');?>
+<!-- /Header --> 
 
-        <div class="parallax1"></div>
-        <div class="parallaxtext">
-            <div class="centered-big-text">
-                WYPOŻYCZALNIA SAMOCHODÓW PLUTEX
-            </div>
-            <div class="centered-small-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam euismod interdum vehicula. Etiam vehicula elit a risus fringilla mollis. Ut sit amet laoreet magna. Nulla et velit a justo semper sodales. Nulla aliquam felis eu nulla pulvinar, at aliquet nunc consectetur. Phasellus est leo, semper ut augue ut, pretium viverra nibh. Praesent id consectetur justo. Nunc non felis at lectus posuere convallis. Proin ut feugiat ante, nec fringilla massa.
-
-Suspendisse volutpat sit amet nunc euismod dapibus. Aliquam congue urna enim, nec commodo tortor auctor vel. Fusce sollicitudin quam non placerat elementum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam erat volutpat. In placerat bibendum pellentesque. Phasellus gravida gravida eros. Donec malesuada urna ac nisi fringilla dictum. Nulla egestas fermentum fringilla. Ut posuere ultricies est id fermentum. Vivamus nibh dolor, porta aliquet diam vitae, maximus ornare mauris. Fusce porttitor felis a felis finibus blandit. Duis sed vestibulum sapien, vitae molestie metus.
-
-Sed id turpis sit amet nisi gravida consectetur. Nunc blandit consectetur mi, in efficitur turpis viverra ut. Curabitur turpis diam, rhoncus ut ipsum sed, tincidunt euismod libero. Proin nisi augue, viverra nec molestie quis, pellentesque ut nisi. Nullam in volutpat velit. Nam justo tellus, tempor at nisl eget, tempor fermentum erat. Ut sed augue non felis tristique rhoncus quis et augue. In molestie turpis quis est porta, vitae mollis mauris luctus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-
-Aenean nec suscipit quam. Vestibulum venenatis mi quis augue rhoncus, et semper orci fringilla. Nunc vel porta erat. Nulla maximus nunc vitae arcu consequat, in aliquet lacus semper. Nullam tellus elit, sagittis vel tortor sit amet, pulvinar rhoncus neque. Duis euismod erat vitae sem finibus, sed pulvinar felis malesuada. Sed sollicitudin aliquam nisl nec elementum.
-
-Nulla lorem nisi, ultricies at elit sed, ultrices euismod enim. Curabitur ante libero, efficitur id eros nec, finibus commodo magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce leo velit, vestibulum ac maximus eu, ullamcorper fermentum dolor. Sed tellus est, rhoncus et elit eu, facilisis tincidunt nibh. Proin quam ex, ornare non fermentum lobortis, malesuada fringilla ante. Integer orci ipsum, sodales quis dictum eget, convallis nec elit. Etiam tincidunt ut mi in tempus. Ut placerat efficitur erat, nec interdum lectus volutpat vitae. Maecenas at sem egestas, malesuada nibh nec, auctor turpis. Phasellus nec quam justo.
-            </div>
+<!-- Banners -->
+<section id="banner" class="banner-section">
+  <div class="container">
+    <div class="div_zindex">
+      <div class="row">
+        <div class="col-md-5 col-md-push-7">
+          <div class="banner_content">
+            <h1>Znajdź auto dla siebie.</h1>
+            <p>Wybierz z pośród tysiąca aut.. </p>
+            <a href="#" class="btn">Czytaj więcej <span class="angle_arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></span></a> </div>
         </div>
-        <div class="parallax2"></div>
-        <div class="parallaxtext">
-            <div class="centered-big-text">
-                DOSTĘPNE MIEJSCA WYPOŻYCZEŃ SAMOCHODÓW
-            </div>
-            <div class="centered-small-text">
-                Aenean nec suscipit quam. Vestibulum venenatis mi quis augue rhoncus, et semper orci fringilla. Nunc vel porta erat. Nulla maximus nunc vitae arcu consequat, in aliquet lacus semper. Nullam tellus elit, sagittis vel tortor sit amet, pulvinar rhoncus neque. Duis euismod erat vitae sem finibus, sed pulvinar felis malesuada. Sed sollicitudin aliquam nisl nec elementum.
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Banners --> 
 
-Nulla lorem nisi, ultricies at elit sed, ultrices euismod enim. Curabitur ante libero, efficitur id eros nec, finibus commodo magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce leo velit, vestibulum ac maximus eu, ullamcorper fermentum dolor. Sed tellus est, rhoncus et elit eu, facilisis tincidunt nibh. Proin quam ex, ornare non fermentum lobortis, malesuada fringilla ante. Integer orci ipsum, sodales quis dictum eget, convallis nec elit. Etiam tincidunt ut mi in tempus. Ut placerat efficitur erat, nec interdum lectus volutpat vitae. Maecenas at sem egestas, malesuada nibh nec, auctor turpis. Phasellus nec quam justo.
-            </div>
-            <div id="map" style="width: 650px; height: 650px;   width: 50%; margin: 0 auto;">
-            </div>
-            <div class="centered-small-text" style="margin-top:40px;">
-Aenean nec suscipit quam. Vestibulum venenatis mi quis augue rhoncus, et semper orci fringilla. Nunc vel porta erat. Nulla maximus nunc vitae arcu consequat, in aliquet lacus semper. Nullam tellus elit, sagittis vel tortor sit amet, pulvinar rhoncus neque. Duis euismod erat vitae sem finibus, sed pulvinar felis malesuada. Sed sollicitudin aliquam nisl nec elementum.
 
-Nulla lorem nisi, ultricies at elit sed, ultrices euismod enim. Curabitur ante libero, efficitur id eros nec, finibus commodo magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce leo velit, vestibulum ac maximus eu, ullamcorper fermentum dolor. Sed tellus est, rhoncus et elit eu, facilisis tincidunt nibh. Proin quam ex, ornare non fermentum lobortis, malesuada fringilla ante. Integer orci ipsum, sodales quis dictum eget, convallis nec elit. Etiam tincidunt ut mi in tempus. Ut placerat efficitur erat, nec interdum lectus volutpat vitae. Maecenas at sem egestas, malesuada nibh nec, auctor turpis. Phasellus nec quam justo.
-            </div>
-            <script>
-                var map;
-                function initMap() {
-                    map = new google.maps.Map(document.getElementById('map'), {
-                        center: {lat: 50.670075, lng: 17.930562},
-                        zoom: 15
-                    });
-                    var myLatLng1 = {lat: 50.670075, lng: 17.930562};
-                    var marker1 = new google.maps.Marker({
-                        position: myLatLng1,
-                        map: map,
-                        title: 'Punkt 1'
-                    });
-                    var myLatLng2 = {lat: 50.667433, lng: 17.926580};
-                    var marker2 = new google.maps.Marker({
-                        position: myLatLng2,
-                        map: map,
-                        title: 'Punkt 2'
-                    });
-                  }
-            </script>
-            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJx9ORVdFAZeMPDXwPrqVVsyii1j0bjN0&callback=initMap" async defer></script>
+<!-- Resent Cat-->
+<section class="section-padding gray-bg">
+  <div class="container">
+    <div class="section-header text-center">
+      <h2>Znajdź auto dla siebie <span></span></h2>
+      <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+    </div>
+    <div class="row"> 
+      
+
+      <!-- Recently Listed New Cars -->
+      <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="resentnewcar">
+
+<?php $sql = "SELECT tblvehicles.VehiclesTitle,tblbrands.BrandName,tblvehicles.PricePerDay,tblvehicles.FuelType,tblvehicles.ModelYear,tblvehicles.id,tblvehicles.SeatingCapacity,tblvehicles.VehiclesOverview,tblvehicles.Vimage1 from tblvehicles join tblbrands on tblbrands.id=tblvehicles.VehiclesBrand";
+$query = $dbh -> prepare($sql);
+$query->execute();
+$results=$query->fetchAll(PDO::FETCH_OBJ);
+$cnt=1;
+if($query->rowCount() > 0)
+{
+foreach($results as $result)
+{  
+?>  
+
+<div class="col-list-3">
+<div class="recent-car-list">
+<div class="car-info-box"> <a href="vehical-details.php?vhid=<?php echo htmlentities($result->id);?>"><img src="admin/img/vehicleimages/<?php echo htmlentities($result->Vimage1);?>" class="img-responsive" alt="image"></a>
+<ul>
+<li><i class="fa fa-car" aria-hidden="true"></i><?php echo htmlentities($result->FuelType);?></li>
+<li><i class="fa fa-calendar" aria-hidden="true"></i><?php echo htmlentities($result->ModelYear);?> Model</li>
+<li><i class="fa fa-user" aria-hidden="true"></i><?php echo htmlentities($result->SeatingCapacity);?> siedzenia</li>
+</ul>
+</div>
+<div class="car-title-m">
+<h6><a href="vehical-details.php?vhid=<?php echo htmlentities($result->id);?>"><?php echo htmlentities($result->BrandName);?> , <?php echo htmlentities($result->VehiclesTitle);?></a></h6>
+<span class="price">$<?php echo htmlentities($result->PricePerDay);?> /Day</span> 
+</div>
+<div class="inventory_info_m">
+<p><?php echo substr($result->VehiclesOverview,0,70);?></p>
+</div>
+</div>
+</div>
+<?php }}?>
+       
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Resent Cat --> 
+
+<!-- Fun Facts-->
+<section class="fun-facts-section">
+  <div class="container div_zindex">
+    <div class="row">
+      <div class="col-lg-3 col-xs-6 col-sm-3">
+        <div class="fun-facts-m">
+          <div class="cell">
+            <h2><i class="fa fa-calendar" aria-hidden="true"></i>40+</h2>
+            <p>Lat w biznesie</p>
+          </div>
         </div>
-        <div class="parallax3"></div>
-    </body>
+      </div>
+      <div class="col-lg-3 col-xs-6 col-sm-3">
+        <div class="fun-facts-m">
+          <div class="cell">
+            <h2><i class="fa fa-car" aria-hidden="true"></i>1200+</h2>
+            <p>Samochodów na sprzedaż</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-xs-6 col-sm-3">
+        <div class="fun-facts-m">
+          <div class="cell">
+            <h2><i class="fa fa-car" aria-hidden="true"></i>1000+</h2>
+            <p>Używanych aut na sprzedaż</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-xs-6 col-sm-3">
+        <div class="fun-facts-m">
+          <div class="cell">
+            <h2><i class="fa fa-user-circle-o" aria-hidden="true"></i>600+</h2>
+            <p>Zadowolonych użytkoników</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Dark Overlay-->
+  <div class="dark-overlay"></div>
+</section>
+<!-- /Fun Facts--> 
+
+
+<!--Testimonial -->
+<section class="section-padding testimonial-section parallex-bg">
+  <div class="container div_zindex">
+    <div class="section-header white-text text-center">
+      <h2>Nasi <span>Klienci</span></h2>
+    </div>
+    <div class="row">
+      <div id="testimonial-slider">
+<?php 
+$tid=1;
+$sql = "SELECT tbltestimonial.Testimonial,tblusers.FullName from tbltestimonial join tblusers on tbltestimonial.UserEmail=tblusers.EmailId where tbltestimonial.status=:tid";
+$query = $dbh -> prepare($sql);
+$query->bindParam(':tid',$tid, PDO::PARAM_STR);
+$query->execute();
+$results=$query->fetchAll(PDO::FETCH_OBJ);
+$cnt=1;
+if($query->rowCount() > 0)
+{
+foreach($results as $result)
+{  ?>
+
+
+        <div class="testimonial-m">
+ 
+         
+              
+          </div>
+        </div>
+        </div>
+        <?php }} ?>
+        
+       
+  
+      </div>
+    </div>
+  </div>
+  <!-- Dark Overlay-->
+  <div class="dark-overlay"></div>
+</section>
+<!-- /Testimonial--> 
+
+
+<!--Footer -->
+<?php include('includes/footer.php');?>
+<!-- /Footer--> 
+
+
+<!--Login-Form -->
+<?php include('includes/login.php');?>
+<!--/Login-Form --> 
+
+<!--Register-Form -->
+<?php include('includes/registration.php');?>
+
+<!--/Register-Form --> 
+
+
+
+<!-- Scripts --> 
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script> 
+<script src="assets/js/interface.js"></script> 
+<!--Switcher-->
+<script src="assets/switcher/js/switcher.js"></script>
+<!--bootstrap-slider-JS--> 
+<script src="assets/js/bootstrap-slider.min.js"></script> 
+<!--Slider-JS--> 
+<script src="assets/js/slick.min.js"></script> 
+<script src="assets/js/owl.carousel.min.js"></script>
+
+</body>
+
 </html>
