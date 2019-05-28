@@ -111,8 +111,14 @@ foreach($results as $result)
     </div>
   </div>
 </section>
-<!-- /Resent Cat --> 
+<!-- /Resent Cat -->
+    <div style="padding: 50px;">
+        <div style="text-align: center; padding: 20px; font-size:40px; color:black;"><b>Dostępne miejsca wypożyczeń</b></div>
+        <div id="map" style="width: 650px; height: 650px;   width: 50%; margin: 0 auto; ">
+    </div>
 
+
+        </div>
 <!-- Fun Facts-->
 <section class="fun-facts-section">
   <div class="container div_zindex">
@@ -154,11 +160,7 @@ foreach($results as $result)
   <!-- Dark Overlay-->
   <div class="dark-overlay"></div>
 </section>
-<!-- /Fun Facts--> 
 
-
-
-<!-- /Testimonial--> 
 
 
 
@@ -185,7 +187,28 @@ foreach($results as $result)
 <!--Slider-JS--> 
 <script src="assets/js/slick.min.js"></script> 
 <script src="assets/js/owl.carousel.min.js"></script>
-
+            <script>
+                var map;
+                function initMap() {
+                    map = new google.maps.Map(document.getElementById('map'), {
+                        center: {lat: 50.670075, lng: 17.930562},
+                        zoom: 15
+                    });
+                    var myLatLng1 = {lat: 50.670075, lng: 17.930562};
+                    var marker1 = new google.maps.Marker({
+                        position: myLatLng1,
+                        map: map,
+                        title: 'Punkt 1'
+                    });
+                    var myLatLng2 = {lat: 50.667433, lng: 17.926580};
+                    var marker2 = new google.maps.Marker({
+                        position: myLatLng2,
+                        map: map,
+                        title: 'Punkt 2'
+                    });
+                  }
+            </script>
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJx9ORVdFAZeMPDXwPrqVVsyii1j0bjN0&callback=initMap" async defer></script>
 </body>
 
 </html>

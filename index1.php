@@ -85,28 +85,7 @@ Aenean nec suscipit quam. Vestibulum venenatis mi quis augue rhoncus, et semper 
 
 Nulla lorem nisi, ultricies at elit sed, ultrices euismod enim. Curabitur ante libero, efficitur id eros nec, finibus commodo magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce leo velit, vestibulum ac maximus eu, ullamcorper fermentum dolor. Sed tellus est, rhoncus et elit eu, facilisis tincidunt nibh. Proin quam ex, ornare non fermentum lobortis, malesuada fringilla ante. Integer orci ipsum, sodales quis dictum eget, convallis nec elit. Etiam tincidunt ut mi in tempus. Ut placerat efficitur erat, nec interdum lectus volutpat vitae. Maecenas at sem egestas, malesuada nibh nec, auctor turpis. Phasellus nec quam justo.
             </div>
-            <script>
-                var map;
-                function initMap() {
-                    map = new google.maps.Map(document.getElementById('map'), {
-                        center: {lat: 50.670075, lng: 17.930562},
-                        zoom: 15
-                    });
-                    var myLatLng1 = {lat: 50.670075, lng: 17.930562};
-                    var marker1 = new google.maps.Marker({
-                        position: myLatLng1,
-                        map: map,
-                        title: 'Punkt 1'
-                    });
-                    var myLatLng2 = {lat: 50.667433, lng: 17.926580};
-                    var marker2 = new google.maps.Marker({
-                        position: myLatLng2,
-                        map: map,
-                        title: 'Punkt 2'
-                    });
-                  }
-            </script>
-            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJx9ORVdFAZeMPDXwPrqVVsyii1j0bjN0&callback=initMap" async defer></script>
+
         </div>
         <div class="parallax3"></div>
     </body>
