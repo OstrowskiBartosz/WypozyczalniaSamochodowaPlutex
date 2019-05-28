@@ -59,12 +59,8 @@ error_reporting(0);
   <div class="container">
     <div class="page-header_wrap">
       <div class="page-heading">
-        <h1>Car Listing</h1>
+        <h1>Lista dostępnych samochodów</h1>
       </div>
-      <ul class="coustom-breadcrumb">
-        <li><a href="#">Home</a></li>
-        <li>Car Listing</li>
-      </ul>
     </div>
   </div>
   <!-- Dark Overlay-->
@@ -76,21 +72,7 @@ error_reporting(0);
 <section class="listing-page">
   <div class="container">
     <div class="row">
-      <div class="col-md-9 col-md-push-3">
-        <div class="result-sorting-wrapper">
-          <div class="sorting-count">
-<?php 
-//Query for Listing count
-$sql = "SELECT id from tblvehicles";
-$query = $dbh -> prepare($sql);
-$query->bindParam(':vhid',$vhid, PDO::PARAM_STR);
-$query->execute();
-$results=$query->fetchAll(PDO::FETCH_OBJ);
-$cnt=$query->rowCount();
-?>
-<p><span><?php echo htmlentities($cnt);?> Listings</span></p>
-</div>
-</div>
+      <div class="col-md-9 col-md-push-2">
 
 <?php $sql = "SELECT tblvehicles.*,tblbrands.BrandName,tblbrands.id as bid  from tblvehicles join tblbrands on tblbrands.id=tblvehicles.VehiclesBrand";
 $query = $dbh -> prepare($sql);
@@ -117,26 +99,15 @@ foreach($results as $result)
         </div>
       <?php }} ?>
          </div>
-      
-
-                 
-              
 
 
-              
-            </ul>
-          </div>
-        </div>
-      </aside>
       <!--/Side-Bar--> 
-    </div>
+
   </div>
 </section>
 <!-- /Listing--> 
 
-<!--Footer -->
-<?php include('includes/footer.php');?>
-<!-- /Footer--> 
+
 
 <!--Back to top-->
 <div id="back-top" class="back-top"> <a href="#top"><i class="fa fa-angle-up" aria-hidden="true"></i> </a> </div>

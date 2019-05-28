@@ -9,11 +9,9 @@
         <div class="col-sm-9 col-md-10">
           <div class="header_info">
             <div class="header_widgets">
-              <div class="circle_icon"> <i class="" aria-hidden="true"></i> </div>
               <p class="uppercase_text">Skontaktuj się z nami : </p>
               <a href="mailto:info@o2.pl">info@o2.pl</a> </div>
             <div class="header_widgets">
-              <div class="circle_icon"> <i class="" aria-hidden="true"></i> </div>
               <p class="uppercase_text">Zadzwoń: </p>
               <a href="tel:61-1234-5678-09">+48-600-800-200</a> </div>
            

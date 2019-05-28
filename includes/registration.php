@@ -59,7 +59,7 @@ return true;
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h3 class="modal-title">Sign Up</h3>
+        <h3 class="modal-title">Rejestracja</h3>
       </div>
       <div class="modal-body">
         <div class="row">
@@ -67,27 +67,23 @@ return true;
             <div class="col-md-12 col-sm-6">
               <form  method="post" name="signup" onSubmit="return valid();">
                 <div class="form-group">
-                  <input type="text" class="form-control" name="fullname" placeholder="Full Name" required="required">
+                  <input type="text" class="form-control" name="fullname" placeholder="Imie i nazwisko*" required="required">
                 </div>
                       <div class="form-group">
-                  <input type="text" class="form-control" name="mobileno" placeholder="Mobile Number" maxlength="10" required="required">
+                  <input type="text" class="form-control" name="mobileno" placeholder="numer telefonu*" maxlength="10" required="required">
                 </div>
                 <div class="form-group">
                   <input type="email" class="form-control" name="emailid" id="emailid" onBlur="checkAvailability()" placeholder="Email Address" required="required">
                    <span id="user-availability-status" style="font-size:12px;"></span> 
                 </div>
                 <div class="form-group">
-                  <input type="password" class="form-control" name="password" placeholder="Password" required="required">
+                  <input type="password" class="form-control" name="password" placeholder="Hasło*" required="required">
                 </div>
                 <div class="form-group">
-                  <input type="password" class="form-control" name="confirmpassword" placeholder="Confirm Password" required="required">
-                </div>
-                <div class="form-group checkbox">
-                  <input type="checkbox" id="terms_agree" required="required" checked="">
-                  <label for="terms_agree">I Agree with <a href="#">Terms and Conditions</a></label>
+                  <input type="password" class="form-control" name="confirmpassword" placeholder="Ponownie Hasło*" required="required">
                 </div>
                 <div class="form-group">
-                  <input type="submit" value="Sign Up" name="signup" id="submit" class="btn btn-block">
+                  <input type="submit" value="Zarejestruj się" name="signup" id="submit" class="btn btn-block">
                 </div>
               </form>
             </div>

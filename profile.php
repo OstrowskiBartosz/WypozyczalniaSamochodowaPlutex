@@ -100,12 +100,8 @@ $msg="Profile Updated Successfully";
   <div class="container">
     <div class="page-header_wrap">
       <div class="page-heading">
-        <h1>Your Profile</h1>
+        <h1>Profil użytkownika</h1>
       </div>
-      <ul class="coustom-breadcrumb">
-        <li><a href="#">Home</a></li>
-        <li>Profile</li>
-      </ul>
     </div>
   </div>
   <!-- Dark Overlay-->
@@ -128,65 +124,41 @@ foreach($results as $result)
 { ?>
 <section class="user_profile inner_pages">
   <div class="container">
-    <div class="user_profile_info gray-bg padding_4x4_40">
-      <div class="upload_user_logo"> <img src="assets/images/dealer-logo.jpg" alt="image">
-      </div>
-
-      <div class="dealer_info">
-        <h5><?php echo htmlentities($result->FullName);?></h5>
-        <p><?php echo htmlentities($result->Address);?><br>
-          <?php echo htmlentities($result->City);?>&nbsp;<?php echo htmlentities($result->Country);?></p>
-      </div>
-    </div>
   
     <div class="row">
 
         <div class="profile_wrap">
-          <h5 class="uppercase underline">Genral Settings</h5>
+          <h5 class="uppercase underline">Dane</h5>
           <?php  
          if($msg){?><div class="succWrap"><strong>SUCCESS</strong>:<?php echo htmlentities($msg); ?> </div><?php }?>
           <form  method="post">
            <div class="form-group">
               
             </div>
-             <?php if($result->UpdationDate!=""){?>
             <div class="form-group">
-              <label class="control-label">Last Update at  -</label>
-             <?php echo htmlentities($result->UpdationDate);?>
-            </div>
-            <?php } ?>
-            <div class="form-group">
-              <label class="control-label">Full Name</label>
+              <label class="control-label">Imie i nazwisko</label>
               <input class="form-control white_bg" name="fullname" value="<?php echo htmlentities($result->FullName);?>" id="fullname" type="text"  required>
             </div>
             <div class="form-group">
-              <label class="control-label">Email Address</label>
+              <label class="control-label">Adres email</label>
               <input class="form-control white_bg" value="<?php echo htmlentities($result->EmailId);?>" name="emailid" id="email" type="email" required readonly>
             </div>
             <div class="form-group">
-              <label class="control-label">Phone Number</label>
+              <label class="control-label">Numer telefonu</label>
               <input class="form-control white_bg" name="mobilenumber" value="<?php echo htmlentities($result->ContactNo);?>" id="phone-number" type="text" required>
             </div>
             <div class="form-group">
-              <label class="control-label">Date of Birth&nbsp;(dd/mm/yyyy)</label>
+              <label class="control-label">Data urodzin(dd/mm/yyyy)</label>
               <input class="form-control white_bg" value="<?php echo htmlentities($result->dob);?>" name="dob" placeholder="dd/mm/yyyy" id="birth-date" type="text" >
             </div>
             <div class="form-group">
-              <label class="control-label">Your Address</label>
+              <label class="control-label">Adres zamieszkania</label>
               <textarea class="form-control white_bg" name="address" rows="4" ><?php echo htmlentities($result->Address);?></textarea>
-            </div>
-            <div class="form-group">
-              <label class="control-label">Country</label>
-              <input class="form-control white_bg"  id="country" name="country" value="<?php echo htmlentities($result->City);?>" type="text">
-            </div>
-            <div class="form-group">
-              <label class="control-label">City</label>
-              <input class="form-control white_bg" id="city" name="city" value="<?php echo htmlentities($result->City);?>" type="text">
             </div>
             <?php }} ?>
            
             <div class="form-group">
-              <button type="submit" name="updateprofile" class="btn">Save Changes <span class="angle_arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></span></button>
+              <button type="submit" name="updateprofile" class="btn">Zapisz zmiany</button>
             </div>
           </form>
         </div>

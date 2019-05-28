@@ -87,7 +87,7 @@ $error="Something went wrong. Please try again";
 </head>
 <body>
 
-<<!-- Start Switcher -->
+<!-- Start Switcher -->
 <?php include('includes/colorswitcher.php');?>
 <!-- /Switcher -->  
         
@@ -100,12 +100,8 @@ $error="Something went wrong. Please try again";
   <div class="container">
     <div class="page-header_wrap">
       <div class="page-heading">
-        <h1>Contact Us</h1>
+        <h1>Skontaktuj się z nami</h1>
       </div>
-      <ul class="coustom-breadcrumb">
-        <li><a href="#">Home</a></li>
-        <li>Contact Us</li>
-      </ul>
     </div>
   </div>
   <!-- Dark Overlay-->
@@ -118,35 +114,35 @@ $error="Something went wrong. Please try again";
   <div class="container">
     <div  class="row">
       <div class="col-md-6">
-        <h3>Get in touch using the form below</h3>
+        <h3>Wyślij nam wiadomość</h3>
           <?php if($error){?><div class="errorWrap"><strong>ERROR</strong>:<?php echo htmlentities($error); ?> </div><?php } 
         else if($msg){?><div class="succWrap"><strong>SUCCESS</strong>:<?php echo htmlentities($msg); ?> </div><?php }?>
         <div class="contact_form gray-bg">
           <form  method="post">
             <div class="form-group">
-              <label class="control-label">Full Name <span>*</span></label>
+              <label class="control-label">Imie i nazwisko <span>*</span></label>
               <input type="text" name="fullname" class="form-control white_bg" id="fullname" required>
             </div>
             <div class="form-group">
-              <label class="control-label">Email Address <span>*</span></label>
+              <label class="control-label">Adres email <span>*</span></label>
               <input type="email" name="email" class="form-control white_bg" id="emailaddress" required>
             </div>
             <div class="form-group">
-              <label class="control-label">Phone Number <span>*</span></label>
+              <label class="control-label">Numer telefonu <span>*</span></label>
               <input type="text" name="contactno" class="form-control white_bg" id="phonenumber" required>
             </div>
             <div class="form-group">
-              <label class="control-label">Message <span>*</span></label>
+              <label class="control-label">Tekst wiadomość <span>*</span></label>
               <textarea class="form-control white_bg" name="message" rows="4" required></textarea>
             </div>
             <div class="form-group">
-              <button class="btn" type="submit" name="send" type="submit">Send Message <span class="angle_arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></span></button>
+              <button class="btn" type="submit" name="send" type="submit">Wyślij wiadomość</button>
             </div>
           </form>
         </div>
       </div>
       <div class="col-md-6">
-        <h3>Contact Info</h3>
+        <h3>lub skontakuj sie za pomocą:</h3>
         <div class="contact_detail">
               <?php 
 $pagetype=$_GET['type'];
@@ -162,16 +158,10 @@ foreach($results as $result)
 { ?>
           <ul>
             <li>
-              <div class="icon_wrap"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
-              <div class="contact_info_m"><?php   echo htmlentities($result->Address); ?></div>
+              <div class="contact_info_m"><a href="tel:61-1234-567-90"><b>Adres email:</b> info@o2.pl</a></div>
             </li>
             <li>
-              <div class="icon_wrap"><i class="fa fa-phone" aria-hidden="true"></i></div>
-              <div class="contact_info_m"><a href="tel:61-1234-567-90"><?php   echo htmlentities($result->EmailId); ?></a></div>
-            </li>
-            <li>
-              <div class="icon_wrap"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
-              <div class="contact_info_m"><a href="mailto:contact@exampleurl.com"><?php   echo htmlentities($result->ContactNo); ?></a></div>
+              <div class="contact_info_m"><a href="mailto:contact@exampleurl.com"><b>Telefon:</b> 600 800 200</a></div>
             </li>
           </ul>
         <?php }} ?>
@@ -183,9 +173,7 @@ foreach($results as $result)
 <!-- /Contact-us--> 
 
 
-<!--Footer -->
-<?php include('includes/footer.php');?>
-<!-- /Footer--> 
+
 
 <!--Back to top-->
 <div id="back-top" class="back-top"> <a href="#top"><i class="fa fa-angle-up" aria-hidden="true"></i> </a> </div>
