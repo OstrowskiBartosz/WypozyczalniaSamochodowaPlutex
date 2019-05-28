@@ -53,7 +53,7 @@ error_reporting(0);
           <div class="banner_content">
             <h1>Znajdź auto dla siebie.</h1>
             <p>Wybierz z pośród tysiąca aut.. </p>
-            <a href="#" class="btn">Czytaj więcej <span class="angle_arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></span></a> </div>
+            <a href="#" class="btn">Czytaj więcej</a> </div>
         </div>
       </div>
     </div>
@@ -120,7 +120,7 @@ foreach($results as $result)
       <div class="col-lg-3 col-xs-6 col-sm-3">
         <div class="fun-facts-m">
           <div class="cell">
-            <h2><i class="fa fa-calendar" aria-hidden="true"></i>40+</h2>
+            <h2>40+</h2>
             <p>Lat w biznesie</p>
           </div>
         </div>
@@ -128,7 +128,7 @@ foreach($results as $result)
       <div class="col-lg-3 col-xs-6 col-sm-3">
         <div class="fun-facts-m">
           <div class="cell">
-            <h2><i class="fa fa-car" aria-hidden="true"></i>1200+</h2>
+            <h2>1200+</h2>
             <p>Samochodów na sprzedaż</p>
           </div>
         </div>
@@ -136,7 +136,7 @@ foreach($results as $result)
       <div class="col-lg-3 col-xs-6 col-sm-3">
         <div class="fun-facts-m">
           <div class="cell">
-            <h2><i class="fa fa-car" aria-hidden="true"></i>1000+</h2>
+            <h2>1000+</h2>
             <p>Używanych aut na sprzedaż</p>
           </div>
         </div>
@@ -144,7 +144,7 @@ foreach($results as $result)
       <div class="col-lg-3 col-xs-6 col-sm-3">
         <div class="fun-facts-m">
           <div class="cell">
-            <h2><i class="fa fa-user-circle-o" aria-hidden="true"></i>600+</h2>
+            <h2>600+</h2>
             <p>Zadowolonych użytkoników</p>
           </div>
         </div>
@@ -157,51 +157,10 @@ foreach($results as $result)
 <!-- /Fun Facts--> 
 
 
-<!--Testimonial -->
-<section class="section-padding testimonial-section parallex-bg">
-  <div class="container div_zindex">
-    <div class="section-header white-text text-center">
-      <h2>Nasi <span>Klienci</span></h2>
-    </div>
-    <div class="row">
-      <div id="testimonial-slider">
-<?php 
-$tid=1;
-$sql = "SELECT tbltestimonial.Testimonial,tblusers.FullName from tbltestimonial join tblusers on tbltestimonial.UserEmail=tblusers.EmailId where tbltestimonial.status=:tid";
-$query = $dbh -> prepare($sql);
-$query->bindParam(':tid',$tid, PDO::PARAM_STR);
-$query->execute();
-$results=$query->fetchAll(PDO::FETCH_OBJ);
-$cnt=1;
-if($query->rowCount() > 0)
-{
-foreach($results as $result)
-{  ?>
 
-
-        <div class="testimonial-m">
- 
-         
-              
-          </div>
-        </div>
-        </div>
-        <?php }} ?>
-        
-       
-  
-      </div>
-    </div>
-  </div>
-  <!-- Dark Overlay-->
-  <div class="dark-overlay"></div>
-</section>
 <!-- /Testimonial--> 
 
 
-<!--Footer -->
-<?php include('includes/footer.php');?>
-<!-- /Footer--> 
 
 
 <!--Login-Form -->

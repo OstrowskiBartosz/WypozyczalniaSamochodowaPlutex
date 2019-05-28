@@ -4,17 +4,17 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-3 col-md-2">
-          <div class="logo"> <a href="index.php"><img src="assets/images/logo.png" alt="image"/></a> </div>
+          <div class="logo"> <a href="index.php"><b>WYPOŻYCZALNIA SAMOCHODÓW PLUTEX</b></a></div>
         </div>
         <div class="col-sm-9 col-md-10">
           <div class="header_info">
             <div class="header_widgets">
-              <div class="circle_icon"> <i class="fa fa-envelope" aria-hidden="true"></i> </div>
+              <div class="circle_icon"> <i class="" aria-hidden="true"></i> </div>
               <p class="uppercase_text">Skontaktuj się z nami : </p>
               <a href="mailto:info@o2.pl">info@o2.pl</a> </div>
             <div class="header_widgets">
-              <div class="circle_icon"> <i class="fa fa-phone" aria-hidden="true"></i> </div>
-              <p class="uppercase_text">W razie problemów dzwoń: </p>
+              <div class="circle_icon"> <i class="" aria-hidden="true"></i> </div>
+              <p class="uppercase_text">Zadzwoń: </p>
               <a href="tel:61-1234-5678-09">+48-600-800-200</a> </div>
            
    <?php   if(strlen($_SESSION['login'])==0)
@@ -41,7 +41,7 @@ echo "Witamy w wypożyczalni samochodów";
       <div class="header_wrap">
         <div class="user_login">
           <ul>
-            <li class="dropdown"> <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user-circle" aria-hidden="true"></i> 
+            <li class="dropdown"> <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="" aria-hidden="true"></i> 
 <?php 
 $email=$_SESSION['login'];
 $sql ="SELECT FullName FROM tblusers WHERE EmailId=:email ";
@@ -54,11 +54,10 @@ if($query->rowCount() > 0)
 foreach($results as $result)
 	{
 
-	 echo htmlentities($result->FullName); }}?><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+	 echo htmlentities($result->FullName)."   |   "; }}?>WIECEJ OPCJI<i class="" aria-hidden="true"></i></a>
               <ul class="dropdown-menu">
            <?php if($_SESSION['login']){?>
             <li><a href="profile.php">Ustawienia użytkownika</a></li>
-              <li><a href="update-password.php">Zmień hasło</a></li>
             <li><a href="my-booking.php">Moje rezerwacje</a></li>
             <li><a href="post-testimonial.php">Daj rekomendacje</a></li>
           <li><a href="my-testimonials.php">Moje rekomendacje</a></li>
@@ -76,11 +75,6 @@ foreach($results as $result)
           </ul>
         </div>
         <div class="header_search">
-          <div id="search_toggle"><i class="fa fa-search" aria-hidden="true"></i></div>
-          <form action="#" method="get" id="header-search-form">
-            <input type="text" placeholder="Search..." class="form-control">
-            <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
-          </form>
         </div>
       </div>
       <div class="collapse navbar-collapse" id="navigation">
@@ -89,7 +83,6 @@ foreach($results as $result)
           	 
           <li><a href="page.php?type=aboutus">O nas</a></li>
           <li><a href="car-listing.php">Lista samochodów</a>
-          <li><a href="page.php?type=faqs">FAQs</a></li>
           <li><a href="contact-us.php">Skontaktuj się z nami</a></li>
 
         </ul>
