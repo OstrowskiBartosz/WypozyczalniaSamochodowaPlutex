@@ -38,7 +38,7 @@ $msg="Profile Updated Successfully";
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="keywords" content="">
 <meta name="description" content="">
-<title>Car Rental Portal | My Profile</title>
+<title>Wypozyczalnia samochodów | Mój profil</title>
 <!--Bootstrap -->
 <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
 <!--Custome Style -->
@@ -100,7 +100,7 @@ $msg="Profile Updated Successfully";
   <div class="container">
     <div class="page-header_wrap">
       <div class="page-heading">
-        <h1>Profil uÅ¼ytkownika</h1>
+        <h1>Profil uzytkownika</h1>
       </div>
     </div>
   </div>
